@@ -31,11 +31,11 @@ public class LinkService {
         return linkRepository.save(link);
     }
 
-    /*public String getUrlOriginal(String urlShort) {
+    public Link getUrlOriginal(String urlShort) {
         try {
-            return linkRepository.findByUrlOriginal(urlShort); 
+            return linkRepository.findByUrlOriginal(urlShort);
         } catch (Exception e) {
             throw new RuntimeException("URL does not exist in our records", e);
         }
-    }*/
+    }
 }
